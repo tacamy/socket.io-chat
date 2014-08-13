@@ -4,7 +4,7 @@ $(function () {
   var $send = $('#js-send');
   var $list = $('#js-message-list');
 
-  var socket = io('http://10.0.1.10:3000');
+  var socket = io('http://localhost:3000');
 
   socket.on('message', function (data) {
     var html = '<li>' + data.name + ': ' + data.message + '</li>';
